@@ -64,16 +64,16 @@ namespace KiraiMod
                 }
                 catch { Logger.Error("Failed to hook OnPlayerLeft"); }
 
-                try
-                {
-                    NetworkManager
-                        .field_Internal_Static_NetworkManager_0
-                        .field_Internal_VRCEventDelegate_1_Player_2
-                        .field_Private_HashSet_1_UnityAction_1_T_0
-                        .Add(Events.OnOwnershipTransferred);
-                    Logger.Trace("Hooked OnOwnershipTransferred");
-                }
-                catch { Logger.Error("Failed to hook OnOwnershipTransferred"); }
+                //try
+                //{
+                //    NetworkManager
+                //        .field_Internal_Static_NetworkManager_0
+                //        .field_Internal_VRCEventDelegate_1_Player_2
+                //        .field_Private_HashSet_1_UnityAction_1_T_0
+                //        .Add(Events.OnOwnershipTransferred);
+                //    Logger.Trace("Hooked OnOwnershipTransferred");
+                //}
+                //catch { Logger.Error("Failed to hook OnOwnershipTransferred"); }
             }
         }
     }
